@@ -3,7 +3,7 @@ Checklist of the most important security countermeasures when designing, testing
 
 ------------------------------------------------------------------------------
 ## Authentication
-- [ ] Don't use `Basic Auth` Use standard authentication (e.g. JWT, OAuth).
+- [. ] Don't use `Basic Auth` Use standard authentication (e.g. JWT, OAuth).
 - [ ] Don't reinvent the wheel in `Authentication`, `token generating`, `password storing` use the standards.
 
 ### JWT (JSON Web Token)
