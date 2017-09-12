@@ -3,7 +3,7 @@ Checklist of the most important security countermeasures when designing, testing
 
 ------------------------------------------------------------------------------
 ## Authentication
-- [. ] Don't use `Basic Auth` Use standard authentication (e.g. JWT, OAuth).
+- [.] Don't use `Basic Auth` Use standard authentication (e.g. JWT, OAuth).
 - [ ] Don't reinvent the wheel in `Authentication`, `token generating`, `password storing` use the standards.
 
 ### JWT (JSON Web Token)
@@ -19,12 +19,12 @@ Checklist of the most important security countermeasures when designing, testing
 - [ ] Define default scope, and validate scope parameter for each application. 
 
 ## Access
-- [ ] Limit requests (Throttling) to avoid DDoS / Bruteforce attacks.
-- [ ] Use HTTPS on server side to avoid MITM.
+- [.] Limit requests (Throttling) to avoid DDoS / Bruteforce attacks.
+- [.] Use HTTPS on server side to avoid MITM.
 - [ ] Use `HSTS` header with SSL to avoid SSL Strip attack.
 
 ## Input
-- [ ] Use proper HTTP method according to operation , `GET (read)`, `POST (create)`, `PUT (replace/update)` and `DELETE (to delete a record)`.
+- [.] Use proper HTTP method according to operation , `GET (read)`, `POST (create)`, `PUT (replace/update)` and `DELETE (to delete a record)`.
 - [ ] Validate `content-type` on request Accept header ( Content Negotiation ) to allow only your supported format (e.g. `application/xml` , `application/json` ... etc) and respond with `406 Not Acceptable` response if not matched.
 - [ ] Validate `content-type` of posted data as you accept (e.g. `application/x-www-form-urlencoded` , `multipart/form-data ,application/json` ... etc ).
 - [ ] Validate User input to avoid common vulnerabilities (e.g. `XSS`, `SQL-Injection` , `Remote Code Execution` ... etc).
